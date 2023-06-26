@@ -1,4 +1,6 @@
 # Changelog
-## v1 - 2023-06-26
-
---- New feature: dynamically add option groups
+## v1 - 2023-06-26 (First realease)
+#### Functions :
+- cl()
+- booleanize()
+- camelize()
