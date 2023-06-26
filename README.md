@@ -1,4 +1,4 @@
-Basic functions pack\
+oxd Basic functions pack\
 _(needed as prerequisite dependency for almost all oxd plugins)_
 -----
 ## **Latest release :** v1 2023-06-26 (First lauNch)
