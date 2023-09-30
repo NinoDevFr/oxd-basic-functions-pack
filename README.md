@@ -1,7 +1,7 @@
 oxd Basic functions pack\
 _(needed as prerequisite dependency for almost all oxd plugins)_
 -----
-## **Latest release :** v1.2 2023-09-30
+## **Latest release :** v1.3 2023-09-30
   - Added : oxdGetPluginCallsCount()
 ## Prerequisites :
 - jQuery 3.x or +
