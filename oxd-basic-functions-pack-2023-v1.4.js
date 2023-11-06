@@ -1,19 +1,16 @@
 // Release v1.4 2023-11-06
-function oxdSlugify($str) {
-	$rules = <<<'RULES'
-		:: Any-Latin;
-		:: NFD;
-		:: [:Nonspacing Mark:] Remove;
-		:: NFC;
-		:: [^-[:^Punctuation:]] Remove;
-		:: Lower();
-		[:^L:] { [-] > ;
-		[-] } [:^L:] > ;
-		[-[:Separator:]]+ > '-';
-	RULES;
-	$slug = \Transliterator::createFromRules($rules)
-		->transliterate( $str );
-    return $slug;
+function oxdSlugify($str="Lorem ipsum, dolor sdit Amet",$sep="-",$case="lower") {
+    $symbols = array('@','#','&','+','=','%', '°', '$', '£');
+    $replaceSymbols = array('-at-','-hash-','-and-','-plus-','-equals-', '-percent-', '-deg-', '-dollar-', '-pounds-');
+    $tmpRes = str_replace($symbols, $replaceSymbols, $str);
+    $case = trim(strtolower($case));
+    $translit = ($case!="lower" && $case!="upper") ? "Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC;" : "Any-Latin; NFD; [:Nonspacing Mark:] Remove; NFC; $case();";
+    $tmpRes = transliterator_transliterate($translit, $tmpRes);
+    $tmpRes = preg_replace('/[^A-Za-z0-9_.\-~()]+/', $sep, $tmpRes);
+    $tmpRes = preg_replace('/-+/', '-', $tmpRes);
+    $tmpRes = preg_replace('/_+/', '_', $tmpRes);
+    $res = trim($tmpRes);
+    return $res;
 }
 // EOF FNCT
 const oxdPiCC = {
