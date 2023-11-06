@@ -1,5 +1,21 @@
-
-// Release v1.3 2023-09-30
+// Release v1.4 2023-11-06
+function oxdSlugify($str) {
+	$rules = <<<'RULES'
+		:: Any-Latin;
+		:: NFD;
+		:: [:Nonspacing Mark:] Remove;
+		:: NFC;
+		:: [^-[:^Punctuation:]] Remove;
+		:: Lower();
+		[:^L:] { [-] > ;
+		[-] } [:^L:] > ;
+		[-[:Separator:]]+ > '-';
+	RULES;
+	$slug = \Transliterator::createFromRules($rules)
+		->transliterate( $str );
+    return $slug;
+}
+// EOF FNCT
 const oxdPiCC = {
   "oxdPluginCallsCount": {}
 }
