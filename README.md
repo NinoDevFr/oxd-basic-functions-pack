@@ -7,11 +7,11 @@ _(needed as prerequisite dependency for almost all oxd plugins)_
 - jQuery 3.x or +
 ## CDN links :
 ### To automatically get latest stable version
-- **Uncompressed :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@main/oxd-basic-functions-pack-2023-latest.js
-- **Minified :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@main/oxd-basic-functions-pack-2023-latest.min.js
+- **Uncompressed :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@latest/oxd-basic-functions-pack-2023-latest.js
+- **Minified :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@latest/oxd-basic-functions-pack-2023-latest.min.js
 ### To manually get v.xx version
-- **Uncompressed :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@main/oxd-basic-functions-pack-2023-v1.4.js
-- **Minified :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@main/oxd-basic-functions-pack-2023-v1.4.min.js
+- **Uncompressed :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@latest/oxd-basic-functions-pack-2023-v1.4.js
+- **Minified :** https://cdn.jsdelivr.net/gh/NinoDevFr/oxd-basic-functions-pack@latest/oxd-basic-functions-pack-2023-v1.4.min.js
 ---
 ## Changelog :
 ### v1.4 (2023-11-06)
