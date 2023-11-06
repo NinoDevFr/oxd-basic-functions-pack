@@ -1,6 +1,8 @@
 # Changelog
-### latest (2023-09-30)
-  - File added : oxd-basic-functions-pack-2023-latest.js (To automatically get latest stable version)
+### latest (2023-11-06)
+  - Updated to v1.4
+### v1.4 (2023-11-06)
+  - Added : oxdSlugify()
 ### v1.3 (2023-09-30)
   - Added : oxdGetPluginCallsCount()
 ### v1.2 (2023-06-26)
